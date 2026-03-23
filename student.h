@@ -4,11 +4,39 @@ using namespace std;
 class student{
 private:
 
-  string name;
+string name;
+int age;
 
-public:
-  
-   void set_name(string="Yme");
-    void print_name();
+public:   
+  void set_name(string="Yme");
+  void print_name();
+
+  void set_age(int );
+  int get_age();
+
+    //make these functions
+    //1. set_age --> set ค่า age
+    //2. get_age --> return ค่า age
 
 };
+
+void student::set_name(string n){
+name=n;
+
+}
+
+void student::print_name(){
+  cout<<"Name: "<<name<<endl;
+
+}
+
+void student::set_age(int x) {
+    if(x>80) age=80;
+    else if (x<5) age=5;
+    else age=x;
+
+}
+
+int student::get_age() {
+    return age;
+}
