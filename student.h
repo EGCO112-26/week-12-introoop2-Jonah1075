@@ -31,9 +31,7 @@ void student::print_name(){
 }
 
 void student::set_age(int x) {
-    if(x>80) age=80;
-    else if (x<5) age=5;
-    else age=x;
+   age=x;
 
 }
 
